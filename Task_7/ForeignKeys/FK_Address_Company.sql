@@ -1,0 +1,3 @@
+﻿ALTER TABLE dbo.Company
+ADD CONSTRAINT FK_Address_Company FOREIGN KEY (AddressId)
+    REFERENCES dbo.[Address] (Id) ON UPDATE CASCADE ON DELETE CASCADE
